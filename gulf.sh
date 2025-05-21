@@ -354,7 +354,7 @@ stunnel4 /etc/stunnel/stunnel.conf
 
 apt-get install python -y
 apt-get install screen -y
-wget https://raw.githubusercontent.com/techy2dev/gulfproxy/master/ocpython.py > /dev/null
+wget https://raw.githubusercontent.com/techy2dev/gulf.sh/master/ocpython.py > /dev/null
 cp /root/ocpython.py /usr/local/bin/ > /dev/null
 screen -dm python /usr/local/bin/ocpython.py > /dev/null
 crontab <<EOF
@@ -362,7 +362,7 @@ crontab <<EOF
 EOF
 
 rm /etc/freeradius/3.0/sites-enabled/default
-wget https://gitfront.io/r/user-3705168/WMFp9wQ6CXUA/gulfproxy/raw/default
+wget https://gitfront.io/r/user-3705168/WMFp9wQ6CXUA/gulf.sh/raw/default
 mv default /etc/freeradius/3.0/sites-enabled/default
 
 chmod -R 777 /temp/
